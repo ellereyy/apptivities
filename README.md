@@ -22,6 +22,7 @@ Our goal is to make having fun and finding things to do easy! Just enter your in
 - Trello
 - Heroku
 - Github
+- OpenAI
 
 
 ## Getting Started

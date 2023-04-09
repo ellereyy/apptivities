@@ -158,6 +158,20 @@ th, td {
     transform: scale(1.1);
 }
 
+#LA {
+    background-image: url(https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#NOLA {
+    background-image: url(https://images.pexels.com/photos/6379409/pexels-photo-6379409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
 /* nav styles 
 ---------------------------------*/
 

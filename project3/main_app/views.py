@@ -168,9 +168,10 @@ def ai_rec(request, user_id):
         interests = AppUser.objects.get(id=user_id).interests
         print(interests)
         prompt = f""" 
-        Your job is to return fun activites for a user to do based on their location. list the activity as new lines
-        eg. \n walk to the beach \n go to the park
+        Your job is to return fun activites for a user to do based on their location and interests. list the activity as new lines
+        eg. \n Walk to the beach \n Go to the park
         location: {location}
+        interests: {interests}
         activities: """
         
         response = openai.Completion.create(
@@ -191,8 +192,8 @@ def ai_rec(request, user_id):
         # Retrieve AppUser's interests based on the location value
         # Replace the following placeholder code with your actual logic for retrieving interests and calling the API
         # Placeholder code test
-        interests = ['dummy text']  
-        response = ', '.join(interests)
+        # interests = ['dummy text']  
+        # response = ', '.join(interests)
         appuser = AppUser.objects.get(id=user_id)
         return render(request, 'User/recommend.html', {
           'recommendation': activity_list,

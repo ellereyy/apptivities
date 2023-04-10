@@ -3,6 +3,7 @@
 
 <div class="container buffer">
     <h1>Activities</h1>
+    <a href="{% url 'activity_create' %}" class="button">Create</a> 
 
     <div class="activity-list">
         {% for activity in object_list %}

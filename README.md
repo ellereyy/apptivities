@@ -8,7 +8,6 @@ Our goal is to make having fun and finding things to do easy! Just enter your in
 ![Landing page](/Project3/main_app/static/assets/landing-page.jpg)
 
 
-
 ## Technologies Used:
 ### Languages: 
 - PSQL

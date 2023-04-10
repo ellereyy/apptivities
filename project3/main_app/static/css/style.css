@@ -30,6 +30,7 @@ th, td {
     margin-top: 2rem;
 }
 
+<<<<<<< HEAD
 /* .button-del {
     color: red;
     border: 1px solid red;
@@ -53,6 +54,13 @@ th, td {
 
 .gradient {
     background: linear-gradient(var(--main-color) 0%, var(--background-color) 10%);
+=======
+/* user page styles 
+---------------------------------*/
+
+.user-styles {
+    background: linear-gradient(to bottom, var(--main-color), var(--background-color));
+>>>>>>> parent of eed14a6 (adjusted templates and styles)
 }
 
 .user-welcome {
@@ -87,15 +95,12 @@ th, td {
 
 .results-display {
     display: block;
-    background-color: white;
-    border-radius: 5px;
-    padding: 2rem;
-    margin: 2rem 0;
 }
 
 
 /* activity model styles 
 ---------------------------------*/
+
 
 .activity-card {
     background-color: var(--secondary-color);

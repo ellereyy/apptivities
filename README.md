@@ -4,7 +4,7 @@ Sometime,  you are so drained after work or school that you cannot think straigh
 Our goal is to make having fun and finding things to do easy! Just enter your interests and location and let Apptivities do the work. This app will help you do just that!
 
 
-## (Screenshot will go here)
+## Home Page
 ![Landing page](/project3/main_app/static/assets/landing-page.jpg)
 
 

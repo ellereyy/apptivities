@@ -5,7 +5,7 @@ Our goal is to make having fun and finding things to do easy! Just enter your in
 
 
 ## (Screenshot will go here)
-![Landing page](/Project3/main_app/static/assets/landing-page.jpg)
+![Landing page](/project3/main_app/static/assets/landing-page.jpg)
 
 
 ## Technologies Used:

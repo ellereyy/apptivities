@@ -166,14 +166,13 @@ def ai_rec(request, user_id):
     if request.method == 'POST':
         location = request.POST.get('location')
         interests = AppUser.objects.get(id=user_id).interests
-        print(interests)
+        print(f"--- User interests: {interests}")
         prompt = f""" 
-        Your job is to return fun activites for a user to do based on their location and interests. list the activity as new lines
+        Your job is to return fun activites for a user to do based on their location and interests, focusing more on the location over the interests. list the activity as new lines
         eg. \n Walk to the beach \n Go to the park
         location: {location}
         interests: {interests}
         activities: """
-        
         response = openai.Completion.create(
             model="text-davinci-003",
             prompt=prompt,
@@ -187,7 +186,8 @@ def ai_rec(request, user_id):
         activities = response.choices[0].text
         activity_list = activities.split('\n')
         activity_list = [activity.strip() for activity in activity_list if activity != '']
-        print(activity_list)
+        print(f"--- AI Activity Dispaly: {activities}")
+        print(f"--- AI Activity List: {activity_list}")
 
         # Retrieve AppUser's interests based on the location value
         # Replace the following placeholder code with your actual logic for retrieving interests and calling the API
@@ -221,8 +221,9 @@ def add_wishlist(request, user_id, activity_str):
       presence_penalty=0.6,
       stop=["<DONE>"]
     )
+    print(f"--- Activity string: {activity_str}")
     description = response.choices[0].text
-    print(description)
+    print(f"--- Activity description: {description}")
     w = Wish.objects.create(user=AppUser.objects.get(id=user_id), name=activity_str, description=description, interests=[])
     w.save()
     a = Activity.objects.create(name=activity_str, description=description, interests=[])
